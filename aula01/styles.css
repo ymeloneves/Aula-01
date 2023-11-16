@@ -1,0 +1,81 @@
+:root {
+  --primary-color: white;
+  --link-color: yellow;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('fundo.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: var(--primary-color);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+
+header h2 {
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+main {
+  text-align: center;
+}
+
+main h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+main p {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+main a {
+  display: inline-block;
+  background-color: transparent;
+  border: 2px solid var(--primary-color);
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--link-color);
+  border-radius: 50px;
+  /* Arredondar as bordas */
+}
+
+/* Estilos para a versão desktop */
+@media only screen and (min-width: 769px) {
+  header h2 {
+    font-size: 20px;
+  }
+
+  main h1 {
+    font-size: 64px;
+  }
+
+  main p {
+    font-size: 18px;
+  }
+
+  main a {
+    padding: 12px 24px;
+    font-size: 18px;
+  }
+}
